@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage("Start container") {
       steps {
-        sh 'docker-compose up -d '
-        sh 'docker-compose ps'
+        sh 'sudo docker-compose up -d '
+        sh 'sudo docker-compose ps'
       }
     }
   }
